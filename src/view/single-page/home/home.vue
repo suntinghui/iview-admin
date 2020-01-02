@@ -30,6 +30,7 @@
         <tableyao style="height: 520px;"/>
       </Card>
     </Row>
+    
   </div>
 </template>
 
