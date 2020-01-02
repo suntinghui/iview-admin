@@ -26,8 +26,8 @@ export default {
     },
 
     getVirtulData() {
-        var date = +echarts.number.parseDate('2017-02-01');
-        var end = +echarts.number.parseDate('2017-03-01');
+        var date = +echarts.number.parseDate('2019-12-01');
+        var end = +echarts.number.parseDate('2020-01-01');
         var dayTime = 3600 * 24 * 1000;
         var data = [];
         for (var time = date; time < end; time += dayTime) {
@@ -100,7 +100,7 @@ export default {
               monthLabel: {
                   show: false
               },
-              range: ['2017-02']
+              range: ['2019-12']
           },
           series: [{
               id: 'label',
@@ -131,8 +131,6 @@ export default {
 
       this.dom = echarts.init(this.$refs.dom)
       this.dom.setOption(option)
-
-      console.log(this.dom)
 
       if (!app.inNode) {
           var pieInitialized;
