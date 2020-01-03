@@ -29,7 +29,7 @@
           trigger: 'axis'
         },
         legend: {
-          data: ['邮件营销', '联盟广告', '视频广告', '直接访问']
+          data: ['M', 'D', 'A', 'B']
         },
         grid: {
           left: '3%',
@@ -38,8 +38,22 @@
           containLabel: true
         },
         toolbox: {
+          show: true,
           feature: {
-            saveAsImage: {}
+            dataView: {
+              show: true,
+              readOnly: false
+            },
+            magicType: {
+              show: true,
+              type: ['line', 'bar']
+            },
+            restore: {
+              show: true
+            },
+            saveAsImage: {
+              show: true
+            }
           }
         },
         xAxis: {
@@ -51,25 +65,25 @@
           type: 'value'
         },
         series: [{
-            name: '邮件营销',
+            name: 'M',
             type: 'line',
             stack: '总量',
             data: [120, 132, 101, 134, 90, 230, 210]
           },
           {
-            name: '联盟广告',
+            name: 'D',
             type: 'line',
             stack: '总量',
             data: [220, 182, 191, 234, 290, 330, 310]
           },
           {
-            name: '视频广告',
+            name: 'A',
             type: 'line',
             stack: '总量',
             data: [150, 232, 201, 154, 190, 330, 410]
           },
           {
-            name: '直接访问',
+            name: 'B',
             type: 'line',
             stack: '总量',
             data: [320, 332, 301, 334, 390, 330, 320]
